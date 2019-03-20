@@ -26,9 +26,8 @@ class Popular_on_NYTTests: XCTestCase {
             url: "https://medium.image.jpg",
             format: "mediumThreeByTwo440"
         )
-        let articleMedia = ArticleMedia(
-            mediaMetadata: [thumbnailMetaData,mediumImageMetaData]
-        )
+        let articleMedia = ArticleMedia(mediaMetaData: [thumbnailMetaData,mediumImageMetaData])
+        
         let article = Article(
             title: "Article Title",
             byline: "by the author",
@@ -54,6 +53,23 @@ class Popular_on_NYTTests: XCTestCase {
             }.first?.url
         XCTAssertEqual(thumbnailUrlString, articleViewModel.thumbnailUrlString)
     }
+    
+    func testArticleDetailsViewModel() {
+        
+        let testArticle = constructTestArticle()
+        let articleDetailsViewModel = ArticleDetailsViewModel(article: testArticle)
+        
+        XCTAssertEqual(testArticle.title, articleDetailsViewModel.title)
+        XCTAssertEqual(testArticle.byline, articleDetailsViewModel.byline)
+        XCTAssertEqual(testArticle.publishedDate, articleDetailsViewModel.publishedDate)
+        
+        let mediaMetaData = testArticle.media.first?.mediaMetadata
+        let thumbnailUrlString = mediaMetaData?.filter{
+            $0.format == "Standard Thumbnail"
+            }.first?.url
+        XCTAssertEqual(thumbnailUrlString, articleDetailsViewModel.thumbnailUrlString)
+    }
+
     
 
 }

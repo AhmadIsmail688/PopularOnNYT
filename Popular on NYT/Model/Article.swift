@@ -32,6 +32,10 @@ struct ArticleMedia: Decodable {
         mediaMetadata = try container.decode([ArticleMediaMetaData].self, forKey: .mediaMetadata)
     }
     
+    init(mediaMetaData: [ArticleMediaMetaData]) {
+        self.mediaMetadata = mediaMetaData
+    }
+    
 }
 
 struct ArticleMediaMetaData: Decodable {
