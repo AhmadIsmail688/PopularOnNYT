@@ -97,12 +97,16 @@
 		398DD2C02241A22600BBA2E8 /* Popular on NYT */ = {
 			isa = PBXGroup;
 			children = (
-				398DD2C12241A22600BBA2E8 /* AppDelegate.swift */,
-				398DD2C32241A22600BBA2E8 /* ViewController.swift */,
-				398DD2C52241A22600BBA2E8 /* Main.storyboard */,
-				398DD2C82241A23A00BBA2E8 /* Assets.xcassets */,
-				398DD2CA2241A23A00BBA2E8 /* LaunchScreen.storyboard */,
-				398DD2CD2241A23A00BBA2E8 /* Info.plist */,
+				398DD2EF2242407D00BBA2E8 /* Model */,
+				398DD2F12242409100BBA2E8 /* View */,
+				398DD2F22242409E00BBA2E8 /* View Model */,
+				398DD2F4224240B200BBA2E8 /* Controller */,
+				398DD2F6224240CF00BBA2E8 /* Network */,
+				398DD2FA2242412A00BBA2E8 /* Helpers */,
+				398DD2FB2242413400BBA2E8 /* Extensions */,
+				398DD2F82242410A00BBA2E8 /* Interface */,
+				398DD2F92242411E00BBA2E8 /* Resources */,
+				398DD2F72242410000BBA2E8 /* Supporting */,
 			);
 			path = "Popular on NYT";
 			sourceTree = "<group>";
@@ -123,6 +127,82 @@
 				398DD2E32241A23D00BBA2E8 /* Info.plist */,
 			);
 			path = "Popular on NYTUITests";
+			sourceTree = "<group>";
+		};
+		398DD2EF2242407D00BBA2E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		398DD2F12242409100BBA2E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		398DD2F22242409E00BBA2E8 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		398DD2F4224240B200BBA2E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				398DD2C32241A22600BBA2E8 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		398DD2F6224240CF00BBA2E8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		398DD2F72242410000BBA2E8 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				398DD2CD2241A23A00BBA2E8 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		398DD2F82242410A00BBA2E8 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				398DD2C52241A22600BBA2E8 /* Main.storyboard */,
+				398DD2CA2241A23A00BBA2E8 /* LaunchScreen.storyboard */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		398DD2F92242411E00BBA2E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				398DD2C82241A23A00BBA2E8 /* Assets.xcassets */,
+				398DD2C12241A22600BBA2E8 /* AppDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		398DD2FA2242412A00BBA2E8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		398DD2FB2242413400BBA2E8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -434,7 +514,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5WD9S6X36;
-				INFOPLIST_FILE = "Popular on NYT/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Popular on NYT/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +532,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5WD9S6X36;
-				INFOPLIST_FILE = "Popular on NYT/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Popular on NYT/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
