@@ -14,7 +14,6 @@ struct ArticleDetailsViewModel {
     let byline: String
     let publishedDate: String
     let abstract: String
-    let thumbnailUrlString: String?
     let imageUrlString: String?
     
     init(article: Article) {
@@ -25,9 +24,6 @@ struct ArticleDetailsViewModel {
         self.abstract = article.abstract
         
         let mediaMetaData = article.media.first?.mediaMetadata
-        self.thumbnailUrlString = mediaMetaData?.filter{
-            $0.format == "Standard Thumbnail"
-            }.first?.url
         self.imageUrlString = mediaMetaData?.filter{
             $0.format == "mediumThreeByTwo440"
             }.first?.url

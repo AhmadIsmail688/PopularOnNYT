@@ -64,12 +64,7 @@ class Popular_on_NYTTests: XCTestCase {
         XCTAssertEqual(testArticle.publishedDate, articleDetailsViewModel.publishedDate)
         XCTAssertEqual(testArticle.abstract, articleDetailsViewModel.abstract)
         
-        let mediaMetaData = testArticle.media.first?.mediaMetadata
-        let thumbnailUrlString = mediaMetaData?.filter{
-            $0.format == "Standard Thumbnail"
-            }.first?.url
-        XCTAssertEqual(thumbnailUrlString, articleDetailsViewModel.thumbnailUrlString)
-        
+        let mediaMetaData = testArticle.media.first?.mediaMetadata        
         let imageUrlString = mediaMetaData?.filter{
             $0.format == "mediumThreeByTwo440"
             }.first?.url
