@@ -11,7 +11,10 @@ import UIKit
 class ArticlesTableViewController: UITableViewController {
 
     var articleViewModels = [ArticleViewModel]()
-    let articleCellId = "ArticleCell"
+    let articleCellId = "ArticleCellId"
+    
+    let detailsSegueId = "showDetails"
+    var selectedArticle: ArticleViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,15 +49,20 @@ class ArticlesTableViewController: UITableViewController {
         return articleCell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedArticle = articleViewModels[indexPath.row]
+        performSegue(withIdentifier: detailsSegueId, sender: nil)
+    }
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == detailsSegueId {
+            let detailsVC = segue.destination as! ArticleDetailsViewController
+            detailsVC.articleViewModel = selectedArticle
+        }
     }
-    */
+    
 
 }
