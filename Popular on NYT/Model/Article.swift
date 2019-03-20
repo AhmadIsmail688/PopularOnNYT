@@ -22,6 +22,16 @@ struct Article: Decodable {
 
 struct ArticleMedia: Decodable {
     var mediaMetadata: [ArticleMediaMetaData]
+    
+    enum CodingKeys: String, CodingKey {
+        case mediaMetadata = "media-metadata"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        mediaMetadata = try container.decode([ArticleMediaMetaData].self, forKey: .mediaMetadata)
+    }
+    
 }
 
 struct ArticleMediaMetaData: Decodable {

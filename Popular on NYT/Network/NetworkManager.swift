@@ -37,6 +37,7 @@ struct NetworkManager {
                     let articlesResponse = try jsonDecoder.decode(ArticlesResponse.self, from: response.data)
                     success(articlesResponse.results)
                 } catch {
+                    print("parse error: ", error)
                     failure(error.localizedDescription)
                 }
                 
