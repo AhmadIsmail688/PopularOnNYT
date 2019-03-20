@@ -14,6 +14,7 @@ struct ArticlesResponse: Decodable {
 
 struct Article: Decodable {
     var title: String
+    var byline: String
     var abstract: String
     var publishedDate: String
     var media: [ArticleMedia]
