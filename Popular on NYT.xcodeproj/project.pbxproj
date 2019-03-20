@@ -17,7 +17,6 @@
 		3942A03E2242967A0029B271 /* UIImageView+ImageUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942A03D2242967A0029B271 /* UIImageView+ImageUrl.swift */; };
 		3942A040224298A90029B271 /* ArticlesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942A03F224298A90029B271 /* ArticlesTableViewController.swift */; };
 		3942A04222429A0B0029B271 /* UIViewController+AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942A04122429A0B0029B271 /* UIViewController+AlertView.swift */; };
-		3942A0462242A0880029B271 /* ArticleDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942A0452242A0880029B271 /* ArticleDetailsViewModel.swift */; };
 		398DD2C22241A22600BBA2E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398DD2C12241A22600BBA2E8 /* AppDelegate.swift */; };
 		398DD2C72241A22600BBA2E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 398DD2C52241A22600BBA2E8 /* Main.storyboard */; };
 		398DD2C92241A23A00BBA2E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 398DD2C82241A23A00BBA2E8 /* Assets.xcassets */; };
@@ -62,7 +61,6 @@
 		3942A03D2242967A0029B271 /* UIImageView+ImageUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageUrl.swift"; sourceTree = "<group>"; };
 		3942A03F224298A90029B271 /* ArticlesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewController.swift; sourceTree = "<group>"; };
 		3942A04122429A0B0029B271 /* UIViewController+AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AlertView.swift"; sourceTree = "<group>"; };
-		3942A0452242A0880029B271 /* ArticleDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsViewModel.swift; sourceTree = "<group>"; };
 		398DD2BE2241A22600BBA2E8 /* Popular on NYT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Popular on NYT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		398DD2C12241A22600BBA2E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		398DD2C62241A22600BBA2E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -197,7 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				3942A037224282470029B271 /* ArticleViewModel.swift */,
-				3942A0452242A0880029B271 /* ArticleDetailsViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -512,7 +509,6 @@
 				3942A032224276B30029B271 /* MostPopularApi.swift in Sources */,
 				3942A04222429A0B0029B271 /* UIViewController+AlertView.swift in Sources */,
 				3942A034224276C10029B271 /* NetworkManager.swift in Sources */,
-				3942A0462242A0880029B271 /* ArticleDetailsViewModel.swift in Sources */,
 				3942A040224298A90029B271 /* ArticlesTableViewController.swift in Sources */,
 				398DD2C22241A22600BBA2E8 /* AppDelegate.swift in Sources */,
 				3942A030224273F50029B271 /* Article.swift in Sources */,
