@@ -26,9 +26,17 @@ class Popular_on_NYTUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
 
+    func testTappingAnArticleOpensTheRightDetails() {
+        XCUIDevice.shared.orientation = .faceUp
+        
+        let app = XCUIApplication()
+        let listingArticleTitle = app.tables.staticTexts.matching(identifier: "ArticleTitle").element(boundBy: 0)
+        listingArticleTitle.tap()
+        let detailsArticleTitle = app.staticTexts["DetailsArticleTitle"]
+        
+        XCTAssertEqual(listingArticleTitle.label, detailsArticleTitle.label)
+        
+    }
+    
 }

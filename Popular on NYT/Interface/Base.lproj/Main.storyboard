@@ -30,7 +30,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v49-Cm-Uh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1133.5999999999999" y="78.710644677661179"/>
+            <point key="canvasLocation" x="1079" y="79"/>
         </scene>
         <!--Details-->
         <scene sceneID="RK6-IR-Ogp">
@@ -63,6 +63,7 @@
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Article Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcf-IC-FHi">
                                                         <rect key="frame" x="107" y="227.5" width="125.5" height="31.5"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="DetailsArticleTitle"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
